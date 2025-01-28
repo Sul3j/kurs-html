@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolory w HTML</title>
+</head>
+<body>
+    <p style="color: aquamarine;">To jest tekst koloru aquamarine</p>
+    <p style="color: blueviolet;">To jest paragraf kloru blueviolet</p>
+    <p style="background-color: #243E73; color: white;">Kolor w zapisie szesnastkowym #243E73</p>
+    <p style="color: rgb(34, 139, 34);">Tekst w zapisie RGB rgb(34, 139, 34)</p>
+    <p style="background-color: rgba(255, 0, 0, 0.5);">Pół przezcztsty czerwony blok z tekstem rgba(255, 0, 0, 0.5)</p>
+    <p style="color: hsl(200, 100%, 50%);">Tekst w jasnoniebieskim kolorze. hsl(200, 100%, 50%)</p>
+
+    <!-- KOLOR TŁA -->
+
+    <div style="background-color: lightblue; padding: 20px;">
+        Sekcja z jasnoniebieskim kolorem
+    </div>
+
+    <div style="background: linear-gradient(to right, red, yellow); padding: 20px;">
+        Gradient od czerwonego do zółtego
+    </div>
+
+    <!-- link do generatora gradientu:  https://cssgradient.io/ -->
+    <div style="background: rgb(27,27,27); background: linear-gradient(90deg, rgba(27,27,27,1) 0%, rgba(86,40,49,1) 38%, rgba(50,129,112,1) 100%); padding: 20px; color: white;">
+        Gradient z generatora
+    </div>
+
+    <!-- blok z obrazem jako tło -->
+    <div style="height: 400px; width: 400px; background-image: url('grafika.jpg'); background-size: cover; padding: 20px; color: white; background-repeat: no-repeat;">
+        Sekcja z obrazem jako tłem
+    </div>
+
+    <div style="background-color: rgba(0, 0, 0, 0.5); color: white; padding: 20px;" >
+        Przezroczyste czarne tło
+    </div>
+
+
+
+</body>
+</html>
