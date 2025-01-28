@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIV i znaczniki semantyczne</title>
+    <style>
+        .container {
+            background-color: lightseagreen;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- grupowanie elementów za pomocą div-a -->
+    <div class="container">
+        <h1>Witaj na stronie</h1>
+        <p>To jest przykładowy tekst w kontenerze.</p>
+    </div>
+
+    <!-- organizacja układu strony za pomocą div-a -->
+     <div class="header">Nagłówek strony</div>
+     <div class="content">Treść główna</div>
+     <div class="footer">Stopka</div>
+
+    <!-- ZNACZNIKI SEMANTYCZNE -->
+    <!-- znacznik <header> - nagłówek -->
+    <header>
+        <h1>Moja Strona</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <!-- znacznik <nav> - nawigacja strony -->
+    <nav>
+        <ul>
+            <li><a href="#">Strona główna</a></li>
+            <li><a href="#">O nas</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </nav>
+    <!-- znacznik <section> - sekcja strony logicznie grupuje treści -->
+    <section>
+        <h2>Aktualności</h2>
+        <p>To jest najnowsza wiadomość.</p>
+    </section>
+    <!-- znacznik <article> - reprezentuje fragment treści -->
+    <article>
+        <h2>Tytuł artykułu</h2>
+        <p>Treść artykułu...</p>
+    </article>
+    <!-- znacznik <aside> - treści poboczne -->
+    <aside>
+        <h3>Reklama</h3>
+        <p>Kup teraz!</p>
+    </aside>
+    <!-- znacznik <footer> - reprezentuje stopkę strony -->
+    <footer>
+        <p>&copy; 2025 Moja Strona. Wszelkie prawa zastrzezone.</p>
+    </footer>
+</body>
+</html>
