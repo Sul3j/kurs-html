@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabele w HTML</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" cellpadding="5" cellspacing="10">
+        <caption>Dane pracowników</caption>
+        <tr>
+            <th>Imię</th>
+            <th>Nazwisko</th>
+            <th>Wiek</th>
+        </tr>
+        <tr>
+            <td>Jan</td>
+            <td>Kowalski</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Anna</td>
+            <td>Nowak</td>
+            <td>30</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Imię</th>
+            <th colspan="2">Dane kontaktowe</th>
+        </tr>
+        <tr>
+            <td>Jan</td>
+            <td>jan.kowalski@example.com</td>
+            <td>123-456-789</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Imię</th>
+            <th>Nazwisko</th>
+            <th>Dział</th>
+        </tr>
+        <tr>
+            <td>Jan</td>
+            <td>Kowalski</td>
+            <td rowspan="2">Księgowość</td>
+        </tr>
+        <tr>
+            <td>Maciek</td>
+            <td>Nowak</td>
+        </tr>
+    </table>
+    
+    <br>
+    <table>
+        <tr>
+            <th rowspan="2">Produkt</th>
+            <th colspan="2">Cena</th>
+        </tr>
+        <tr>
+            <td>Netto</td>
+            <td>Brutto</td>
+        </tr>
+        <tr>
+            <td>Telefon</td>
+            <td>1000 PLN</td>
+            <td>1230 PLN</td>
+        </tr>
+    </table>
+</body>
+</html>

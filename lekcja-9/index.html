@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiperłącza w HTML</title>
+    <style>
+        * {
+            margin: 0;
+            scroll-behavior: smooth;
+        }
+
+        header, main, footer {
+            width: 100vw;
+            height: 100vh;
+        }
+        header {
+            background-color: red;
+        }
+        main {
+            background-color: blue;
+        }
+        footer {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <header id="sekcja-naglowkowa">
+        <h2>Header</h2>
+        <a href="https://materialy.szymonsulejczak.com/" target="_blank" rel="noopener noreserrer">Odwiedź przykład</a>
+        <a href="#sekcja-glowna">glówna</a>
+        <a href="#sekcja-stopki">stopka</a>
+        <a href="./kontakt.html">kontakt</a>
+        <a href="mailto:contact@szymonsulejczak.com">Wyślij e-mail</a>
+        <a href="tel:+48123456789">Zadzwoń do nas</a>
+        <a href="./obrazek.jpg">
+            <img src="./obrazek.jpg" alt="słonecznik">
+        </a>
+    </header>
+    <main id="sekcja-glowna">
+        <a href="#sekcja-naglowkowa">naglowek</a>
+        <h2>Main</h2>
+    </main>
+    <footer id="sekcja-stopki">
+        <a href="#sekcja-naglowkowa">naglowek</a>
+        <h2>Footer</h2>
+    </footer>
+</body>
+</html>
